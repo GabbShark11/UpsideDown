@@ -1,0 +1,18 @@
+capability
+
+- responsif
+
+how to run?
+
+1. start apache on XAMPP
+2. open your browser
+3. insert a localhost url like 
+
+<!-- example -->
+<!-- https://localhost/your_first_file/your_second_file -->
+
+<!-- implementation url run in apache -->
+<!-- you must enter into the login page first -->
+<!-- http://localhost/blixim/login-page/ -->
+
+thanks
