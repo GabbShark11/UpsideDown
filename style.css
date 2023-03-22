@@ -1,0 +1,12 @@
+@media only screen and (max-width: 576px){
+    button{
+        width: 20pc;
+        height: 3pc;
+        position: relative;
+        left: 3pc;
+        top: 20pc;
+        box-shadow: 5px 5px;
+
+        
+    }
+}
