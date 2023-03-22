@@ -1,13 +1,19 @@
-const eye = document.querySelector('#eye')
-const passwordInput = document.querySelector('#password')
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
-let kondisi = false
-eye.addEventListener('click', () => {
-  if(kondisi){
-    passwordInput.setAttribute('type', 'password')
-    kondisi = false
-  } else {
-    passwordInput.setAttribute('type', 'text')
-    kondisi = true
-  }
-})
+    const alert = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '</div>'
+    ].join('')
+
+    alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+    alertTrigger.addEventListener('click', () => {
+    alert('Actually, i like u, but i realize that I hve a lot of shortcomings to hve u :)', 'success')
+    })
+}
